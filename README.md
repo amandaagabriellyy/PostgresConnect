@@ -323,6 +323,6 @@ Este manual cobre os comandos SQL e a integração com o Java, tanto para manipu
             JOptionPane.showMessageDialog(this,"Erro ao apagar");
         }
 
-        ```
+
 
 
