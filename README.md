@@ -310,19 +310,19 @@ Este manual cobre os comandos SQL e a integração com o Java, tanto para manipu
 ```java
 
  try {
-            String id_ = jLabel1.getText();
-            int id = Integer.valueOf(id_);
-            String comando = "DELETE FROM veiculos WHERE id = ?";
-            PreparedStatement pstmt;
-            pstmt = conexao.prepareStatement(comando);
-            pstmt.setInt(1,id);
-            pstmt.executeUpdate();
-            JOptionPane.showMessageDialog(this,"Apagado com Sucesso");
-            jButton6.doClick();
-        } catch (Exception e){
-            JOptionPane.showMessageDialog(this,"Erro ao apagar");
-        }
-
+    String id_ = jLabel1.getText();
+    int id = Integer.valueOf(id_);
+    String comando = "DELETE FROM veiculos WHERE id = ?";
+    PreparedStatement pstmt;
+    pstmt = conexao.prepareStatement(comando);
+    pstmt.setInt(1,id);
+    pstmt.executeUpdate();
+    JOptionPane.showMessageDialog(this,"Apagado com Sucesso");
+    jButton6.doClick();
+} catch (Exception e){
+    JOptionPane.showMessageDialog(this,"Erro ao apagar");
+}
+```
 
 
 
